@@ -14,3 +14,27 @@
 
 ## git merge origin/main
 合并远程对应分支到本地当前分支（例如 main 分支）
+
+
+# 将新项目上传仓库
+
+## 准备本地项目
+### 初始化Git仓库
+git init
+
+## 添加文件到本地仓库
+### 添加所有文件到暂存区
+git add .
+### 提交更改
+git commit -m "Initial commit"
+
+## 关联 GitHub 远程仓库
+### 复制 GitHub 仓库的 ‌HTTPS/SSH 地址
+### 添加远程仓库地址（将 <url> 替换为复制的地址）
+git remote add origin <url>
+
+## 推送代码到 GitHub
+git push -u origin main(本地分支名)
+
+
+
