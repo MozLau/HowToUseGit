@@ -37,4 +37,16 @@ git remote add origin <url>
 git push -u origin main(本地分支名)
 
 
+# 远程仓库操作
+## 查看当前远程地址
+git remote -v
+
+## 修改远程仓库地址
+git remote set-url origin [新仓库地址]
+
+## 验证修改结果
+git remote -v
+
+
+
 
