@@ -1,3 +1,22 @@
+# 初始化
+## 查看密匙
+### linux
+ls -al ~/.ssh/
+### powershell
+ls ~\.ssh
+
+## 生成密匙
+ssh-keygen -t ed25519 -C "2019040706013@std.uestc.edu.cn"
+
+## 复制
+cat ~/.ssh/id_ed25519.pub
+
+## 拉取远程
+git pull --rebase origin main
+
+## 推送
+git push -u origin main
+
 # git add . 和 git add * 的区别
 ## git add .
 添加当前目录及其子目录中的所有文件（包括隐藏文件）。    
